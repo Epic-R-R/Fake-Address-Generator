@@ -1,8 +1,8 @@
 import requests
 import re
-from subprocess import Popen, PIPE
+from randomuser import request
 
-BOT_TOKEN = "YOUR_BOT_TOKEN"
+BOT_TOKEN = "1463819644:AAEJ7cZLqHr5wrEROJL_lWDxzklQsBTZ6nc"
 base_url = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
 
@@ -34,46 +34,6 @@ def send_message(chat_id, message_text):
     return response
 
 
-# create func that get dog picture
-def get_dog_pic():
-    allowed_extension = ["jpg", "jpeg", "png"]
-    file_extension = ""
-    while (
-        file_extension not in allowed_extension
-    ):  # Get valid url for picture (jpg, jpeg, png)
-        contents = requests.get("https://random.dog/woof.json").json()
-        photo = contents["url"]
-        print(photo)
-        file_extension = re.search("([^.]*)$", photo).group(1).lower()
-    return photo
-
-
-# create func that let bot send photo to user
-def send_dog_photo(chat_id, photo_url):
-    params = {"chat_id": chat_id, "photo": photo_url}
-    response = requests.post(base_url + "sendPhoto", data=params)
-    return response
-
-
-# create func that get dog gif
-def get_dog_gif():
-    allowed_extension = ["mp4", "gif"]
-    file_extension = ""
-    while file_extension not in allowed_extension:  # Get valid url for gif (mp4, gif)
-        contents = requests.get("https://random.dog/woof.json").json()
-        gif = contents["url"]
-        print(gif)
-        file_extension = re.search("([^.]*)$", gif).group(1).lower()
-    return gif
-
-
-# create func that let bot send gif to user
-def send_dog_gif(chat_id, gif_url):
-    params = {"chat_id": chat_id, "document": gif_url}
-    response = requests.post(base_url + "sendDocument", data=params)
-    return response
-
-
 # create main func for navigate or reply message back
 def main():
     update_id = last_update(req=base_url)["update_id"]
@@ -90,16 +50,14 @@ def main():
                     "Commands:👇\n /fake: Send Fake Address",
                 )
 
-            elif get_message_text(update).lower() == "dog":
-                send_dog_photo(get_chat_id(update), get_dog_pic())
+            elif get_message_text(update).lower() == "/fake":
+                data = request()
+                message = f"""
+                Name: {data["results"][0]['name']}
+                """
+                send_message(get_chat_id(update), request())
                 print(
-                    f"\033[33mDog Picture Sended. \nDog Picture Url -> {get_dog_pic()}\033[39m"
-                )
-
-            elif get_message_text(update).lower() == "dog gif":
-                send_dog_gif(get_chat_id(update), get_dog_gif())
-                print(
-                    f"\033[33mDog Gif Sended. \nDog Gif Url -> {get_dog_gif()}\033[39m"
+                    f"\033[33mFake Address Send. \nDog Picture Url -> {get_dog_pic()}\033[39m"
                 )
             else:
                 send_message(

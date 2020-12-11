@@ -1,11 +1,10 @@
 import requests
 
 
-def request(gender):
-    url = f"https://randomuser.me/api/?gender={gender}"
+def request():
+    url = f"https://randomuser.me/api/"
     response = requests.get(url).json()
     return response
 
 
-if __name__ == "__main__":
-    gender = input("Enter gender you want: ").strip()
+print(request())
