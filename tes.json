@@ -1,11 +1,66 @@
-{'results': [
-        {'gender': 'female', 'name': {'title': 'Mademoiselle', 'first': 'Laetitia', 'last': 'Rey'
-            }, 'location': {'street': {'number': 249, 'name': "Place de L'Abbé-Georges-Hénocque"
-                }, 'city': 'Le Pâquier (Fr)', 'state': 'Zürich', 'country': 'Switzerland', 'postcode': 9700, 'coordinates': {'latitude': '-48.5026', 'longitude': '44.2905'
-                }, 'timezone': {'offset': '-3: 30', 'description': 'Newfoundland'
+{
+    "results": [
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Julius",
+                "last": "Laitinen"
+            },
+            "location": {
+                "street": {
+                    "number": 5390,
+                    "name": "Satakennankatu"
+                },
+                "city": "Lemi",
+                "state": "Central Finland",
+                "country": "Finland",
+                "postcode": 68304,
+                "coordinates": {
+                    "latitude": "-15.6815",
+                    "longitude": "-31.7609"
+                },
+                "timezone": {
+                    "offset": "-3:30",
+                    "description": "Newfoundland"
                 }
-            }, 'email': 'laetitia.rey@example.com', 'login': {'uuid': '8d55037f-3860-4243-82ea-cada13f420df', 'username': 'purplepeacock705', 'password': 'truman', 'salt': 'Gzdlpmsl', 'md5': '523084db10bae9e11c802d8e8f16ead0', 'sha1': '6682d5eb697e61b1d619061a3d01a2e6fbe92534', 'sha256': '692f37ffc85eb2f08f7793723f684d8012e86635b319f968c1ba232d032b12a8'
-            }, 'dob': {'date': '1990-04-21T07: 51: 25.662Z', 'age': 30
-            }, 'registered': {'date': '2013-07-14T13: 15: 14.573Z', 'age': 7
-            }, 'phone': '076 108 92 83', 'cell': '075 289 99 26', 'id': {'name': 'AVS', 'value': '756.0474.4532.23'
-            }, 'picture': {'large': 'https: //randomuser.me/api/portraits/women/9.jpg', 'medium': 'https://randomuser.me/api/portraits/med/women/9.jpg', 'thumbnail': 'https://randomuser.me/api/portraits/thumb/women/9.jpg'}, 'nat': 'CH'}], 'info': {'seed': '79dfe677acfe23ed', 'results': 1, 'page': 1, 'version': '1.3'}}
+            },
+            "email": "julius.laitinen@example.com",
+            "login": {
+                "uuid": "6658c70a-dab0-4058-b648-60e9ede396b3",
+                "username": "crazylion487",
+                "password": "hhhh",
+                "salt": "ZNUaduID",
+                "md5": "69dfd3a64f30dc67ff64d452879737c6",
+                "sha1": "f5397a4661c1afe9e00fd831835e421711c60a2f",
+                "sha256": "ecb8c1ba0ff51c1a7d6df5dbd3c5b99dbada42425875634d088556cafa98604b"
+            },
+            "dob": {
+                "date": "1945-11-30T16:12:09.215Z",
+                "age": 75
+            },
+            "registered": {
+                "date": "2018-04-29T16:24:00.139Z",
+                "age": 2
+            },
+            "phone": "09-892-547",
+            "cell": "042-137-33-21",
+            "id": {
+                "name": "HETU",
+                "value": "NaNNA261undefined"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/56.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/56.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/56.jpg"
+            },
+            "nat": "FI"
+        }
+    ],
+    "info": {
+        "seed": "7f1f7a32dadab62b",
+        "results": 1,
+        "page": 1,
+        "version": "1.3"
+    }
+}
