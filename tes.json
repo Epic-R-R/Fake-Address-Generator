@@ -1,0 +1,11 @@
+{'results': [
+        {'gender': 'male', 'name': {'title': 'Mr', 'first': 'Kenan', 'last': 'Akışık'
+            }, 'location': {'street': {'number': 3261, 'name': 'Mevlana Cd'
+                }, 'city': 'Çanakkale', 'state': 'Adana', 'country': 'Turkey', 'postcode': 69643, 'coordinates': {'latitude': '73.6412', 'longitude': '7.7683'
+                }, 'timezone': {'offset': '+2: 00', 'description': 'Kaliningrad, South Africa'
+                }
+            }, 'email': 'kenan.akisik@example.com', 'login': {'uuid': '185e30a5-fa78-4bf1-afe3-61e78d7f580b', 'username': 'whitetiger299', 'password': 'boxster', 'salt': 'w0NEFS7f', 'md5': '3007c7f117bf7e6aec825601550f55bc', 'sha1': '9ca4a7121dab0a91fd98c25baa96e8562e1de53d', 'sha256': 'a92411ecdb4912ee6b6c3df159ba89d0a2911f4a3351cee687726bc707b321c0'
+            }, 'dob': {'date': '1965-09-27T01: 53: 38.144Z', 'age': 55
+            }, 'registered': {'date': '2003-09-22T00: 31: 58.983Z', 'age': 17
+            }, 'phone': '(458)-493-5074', 'cell': '(338)-209-4467', 'id': {'name': '', 'value': None
+            }, 'picture': {'large': 'https: //randomuser.me/api/portraits/men/93.jpg', 'medium': 'https://randomuser.me/api/portraits/med/men/93.jpg', 'thumbnail': 'https://randomuser.me/api/portraits/thumb/men/93.jpg'}, 'nat': 'TR'}], 'info': {'seed': '661c2f7d2ce19b88', 'results': 1, 'page': 1, 'version': '1.3'}}
