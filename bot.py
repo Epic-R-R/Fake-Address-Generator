@@ -6,14 +6,8 @@ from typing import Dict
 
 import requests
 from telegram import ReplyKeyboardMarkup, Update
-from telegram.ext import (
-    CallbackContext,
-    CommandHandler,
-    ConversationHandler,
-    Filters,
-    MessageHandler,
-    Updater,
-)
+from telegram.ext import (CallbackContext, CommandHandler, ConversationHandler,
+                          Filters, MessageHandler, Updater)
 
 # Enable logging
 logging.basicConfig(
@@ -117,9 +111,7 @@ def main() -> None:
     # Create the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
-    updater = Updater(
-        "1463819644:AAEJ7cZLqHr5wrEROJL_lWDxzklQsBTZ6nc", use_context=True
-    )
+    updater = Updater("TOKEN", use_context=True)
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
